@@ -1,0 +1,14 @@
+.yearly-trend-container {
+    width: 90%;
+    height: 50px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.custom-chart-color {
+    color: red !important;
+}
