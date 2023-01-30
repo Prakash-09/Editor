@@ -11,4 +11,6 @@
 
 .custom-chart-color {
     color: red !important;
+    background-color: red !important;
+    font-size: small !important;
 }

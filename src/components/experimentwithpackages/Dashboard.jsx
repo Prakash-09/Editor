@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sandpack } from '@codesandbox/sandpack-react';
+import './Dashboard.css';
 
 export default class Dashboard extends React.Component {
     constructor(props) {
@@ -22,12 +23,15 @@ export default class Dashboard extends React.Component {
                 {!loading && <div>
                     <Sandpack template='react'
                         options={{
+                            autorun: false,
                             showTabs: true,
-                            visibleFiles: ["/App.js", "/index.js", "/styles.css", "/public/index.html", "/package.json"]
+                            showLineNumbers: true,
+                            visibleFiles: ["/App.js", "/index.js", "/styles.css", "/public/index.html", "/package.json"],
+                            classes: {
+                                "sp-wrapper": "custom-chart-styles",
+                            },
                         }}
                         customSetup={{
-
-                            entry: "/index.js",
                             dependencies: {
                                 "apexcharts": "^3.36.3",
                                 "bootstrap": "^4.6.1",
